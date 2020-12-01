@@ -41,7 +41,7 @@
     ?>
 
 
-    <form class="form-signin" method="POST" action="proses-login.php">
+    <form class="form-signin" method="POST" action="login/proses-login.php">
         <a href="../index.php" class="navbar-brand">
             <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         </a>
