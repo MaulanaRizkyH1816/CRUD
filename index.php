@@ -139,8 +139,8 @@ if(isset($_POST['bsimpan']))
                     
                     <button type="submit" class="btn btn-secondary" name="bsimpan">Simpan</button>
                     <button type="reset" class="btn btn-danger" name="briset">Reset</button>
+                    <a class="btn btn-primary" href="https://rizky-pwl.herokuapp.com/login/index.php">Simpan</a>
                 </form>
-                <a class="btn btn-secondary" href="https://rizky-pwl.herokuapp.com/login/index.php">Simpan</a>
             </div>
     </div>  
  <!-- Akhir Card Form -->
