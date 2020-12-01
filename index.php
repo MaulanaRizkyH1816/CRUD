@@ -137,7 +137,8 @@ if(isset($_POST['bsimpan']))
 
 
                     <button type="submit" class="btn btn-secondary" name="bsimpan">Simpan</button>
-                    <button type="reset" class="btn btn-danger" name="briset">Reset</button>
+                    <button type="submit" class="btn btn-secondary" name="bsimpan">Simpan</button>
+                    <a  class="btn btn-primary" href="login/index.php">Login</a>
                 </form>
             </div>
     </div>  
