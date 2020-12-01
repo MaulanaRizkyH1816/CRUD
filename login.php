@@ -11,13 +11,13 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
 
     <!-- Custom styles for this template -->
-    <link href="../src/signin.css" rel="stylesheet">
-    <link href="../src/mycss.css" rel="stylesheet">
+    <link href="src/signin.css" rel="stylesheet">
+    <link href="src/mycss.css" rel="stylesheet">
 </head>
 </head>
 
 <body class="text-center">
-<?php include "../config.php"?>
+<?php include "config.php"?>
     <?php
     session_start();
     if (isset($_COOKIE['cookielogin'])) {
@@ -31,12 +31,12 @@
         if ($username == $login->username && password_verify($pass, $login->pass)) {
             $_SESSION['logged'] = 1;
             $_SESSION['username'] = $login->username;
-            header('Location: ../index.php');
+            header('Location: index.php');
         } else {
             header('Location: index.php');
         }
     } elseif (isset($_SESSION['logged'])) {
-        header('Location: ../index.php');
+        header('Location: index.php');
     }
     ?>
 
@@ -67,4 +67,4 @@
     </form>
 
 
-    <?php require "../tema/footer.php" ?>
+    <?php require "tema/footer.php" ?>
