@@ -1,5 +1,3 @@
-<?php include "../config.php"?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +17,7 @@
 </head>
 
 <body class="text-center">
-
+<?php include "../config.php"?>
     <?php
     session_start();
     if (isset($_COOKIE['cookielogin'])) {
