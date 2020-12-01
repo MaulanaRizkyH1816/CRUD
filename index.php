@@ -136,10 +136,11 @@ if(isset($_POST['bsimpan']))
                     </div>
 
 
+                    
                     <button type="submit" class="btn btn-secondary" name="bsimpan">Simpan</button>
-                    <button type="submit" class="btn btn-secondary" name="bsimpan">Simpan</button>
-                    <a  class="btn btn-primary" href="login/index.php">Login</a>
+                    <button type="reset" class="btn btn-danger" name="briset">Reset</button>
                 </form>
+                <a class="btn btn-secondary" href="login/index.php">Simpan</a>
             </div>
     </div>  
  <!-- Akhir Card Form -->
