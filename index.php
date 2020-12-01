@@ -106,6 +106,10 @@ if(isset($_POST['bsimpan']))
                         <input type="text" name="tnama" value="<?=@$vnama?>" class="form-control" placeholder="Input Nama anda di sini !" required>
                     </div>
                     <div class="form-group">
+                        <label>Nama</label>
+                        <input type="password" name="tpassword" value="<?=@$vpassword?>" class="form-control" placeholder="Input Password Anda di sini !" required>
+                    </div>
+                    <div class="form-group">
                         <label>Alamat</label>
                         <textarea name="talamat" class="form-control" placeholder = "Input Alamat anda disini!"><?=@$valamat?></textarea>
                     </div>
