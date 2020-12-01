@@ -19,6 +19,7 @@ if(isset($_POST['bsimpan']))
                         jenis_kelamin ='$_POST[tjenis_kelamin]'
                         WHERE nim = '$_GET[id]'
          ");
+
     
     if($edit){
         echo "<script> 
@@ -42,8 +43,10 @@ if(isset($_POST['bsimpan']))
                 '$_POST[tprodi]',
                 '$_POST[tjenis_kelamin]')
         ");
+
+        $simpanPassword = mysqli_query($koneksi, "INSERT INTO login VALUES('NULL', '$_POST[tnim]', '$_POST[tpassword]')");
         
-        if($simpan){
+        if($simpan && $simpanPassword){
             echo "<script> 
                 alert('Simpan data sukses !');
                 document.location='index.php';
@@ -106,7 +109,7 @@ if(isset($_POST['bsimpan']))
                         <input type="text" name="tnama" value="<?=@$vnama?>" class="form-control" placeholder="Input Nama anda di sini !" required>
                     </div>
                     <div class="form-group">
-                        <label>Nama</label>
+                        <label>Password</label>
                         <input type="password" name="tpassword" value="<?=@$vpassword?>" class="form-control" placeholder="Input Password Anda di sini !" required>
                     </div>
                     <div class="form-group">
