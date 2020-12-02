@@ -53,8 +53,8 @@
                 </div>
             </p>
         <?php endif; ?>
-        <label for="inputUsername" class="sr-only">Username</label>
-        <input type="text" name="username" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputUsername" class="sr-only">NIM</label>
+        <input type="text" name="username" id="inputEmail" class="form-control" placeholder="EX : xx.xx.xxx" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <div class="checkbox mb-3">

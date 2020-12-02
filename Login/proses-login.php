@@ -23,5 +23,5 @@ if ($login != NULL) {
         header("Location: ../index.php?login=sukses");
     }
 } else {
-    header('Location: index.php?login=gagal');
+    header('Location: ../index.php?login=gagal');
 }
