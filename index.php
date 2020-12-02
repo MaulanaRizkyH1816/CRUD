@@ -1,7 +1,6 @@
 <?php include "tema/head.php" ?>
 <?php include "config.php" ?>
 <?php session_start();
-var_dump($_SERVER['SERVER_NAME']);
 //jika tombol disimpan diklik
 if (isset($_POST['bsimpan'])) {
     //pengujian apakah data akan diedit atau disimpan baru
@@ -137,9 +136,9 @@ if (isset($_GET['hal'])) {
                 <?php if (isset($_SESSION['logged'])) : ?>
                     <a class="btn btn-primary"><?= $_SESSION['username']; ?></a>
                     
-                    <a class="btn btn-success" href="/login/logout.php">Logout</a>
+                    <a class="btn btn-success" href="<?= $_SERVER['SERVER_NAME'] ?>/login/logout.php">Logout</a>
                 <?php else : ?>
-                    <a class="btn btn-primary" href="/login/login.php">Login</a>
+                    <a class="btn btn-primary" href="<?= $_SERVER['SERVER_NAME'] ?>/login/login.php">Login</a>
                 <?php endif; ?>
             </form>
         </div>
