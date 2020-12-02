@@ -102,7 +102,7 @@ if (isset($_GET['hal'])) {
                     <label>Nama</label>
                     <input type="text" name="tnama" value="<?= @$vnama ?>" class="form-control" placeholder="Input Nama anda di sini !" required>
                 </div>
-                <?php if(!isset($_GET['hal'])=='edit') :?>
+                <?php if(!(isset($_GET['hal'])=='edit')) :?>
                 <div class="form-group">
                     <label>Password</label>
                     <input type="password" name="tpassword" value="<?= @$vpassword ?>" class="form-control" placeholder="Input Password Anda di sini !" required>
