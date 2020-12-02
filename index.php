@@ -136,9 +136,9 @@ if (isset($_GET['hal'])) {
                 <?php if (isset($_SESSION['logged'])) : ?>
                     <a class="btn btn-primary"><?= $_SESSION['username']; ?></a>
                     
-                    <a class="btn btn-success" href="/login/logout.php">Logout</a>
+                    <a class="btn btn-success" href="login/logout.php">Logout</a>
                 <?php else : ?>
-                    <a class="btn btn-primary" href="/login/login.php">Login</a>
+                    <a class="btn btn-primary" href="login/login.php">Login</a>
                 <?php endif; ?>
             </form>
         </div>
