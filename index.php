@@ -146,6 +146,7 @@ if (isset($_GET['hal'])) {
     </div>
     <!-- Akhir Card Form -->
 
+    <?php if(isset($_SESSION['logged'])): ?>
     <!-- Awal Card table -->
     <div class="card mt-3">
         <div class="card-header bg-success text-white">
@@ -186,6 +187,7 @@ if (isset($_GET['hal'])) {
         </div>
     </div>
     <!-- Akhir Card table -->
+                <?php endif; ?>
 
 </div>
 
