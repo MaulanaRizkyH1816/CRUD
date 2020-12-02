@@ -9,8 +9,11 @@ $sql = "SELECT * FROM `login` WHERE username = '$username'";
 $query = mysqli_query($koneksi, $sql);
 $login = mysqli_fetch_object($query);
 
+var_dump($pass, $login->$pass);
+die();
+
 if ($login != NULL) {
-    if ($username == $login->username && password_verify($pass, $login->pass)) {
+    if ($username == $login->username && $pass == $login->password) {
         $_SESSION['logged'] = 1;
         $_SESSION['username'] = $username;
 
