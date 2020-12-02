@@ -6,7 +6,7 @@ if (isset($_COOKIE['cookielogin'])) {
     setcookie("cookielogin[user]", "", $time - 3600);
     setcookie("cookielogin[pass]", "", $time - 3600);
 
-    header('Location: /CRUD/Login/index.php');
+    header('Location: login.php');
     exit();
 }
-header('Location: /CRUD/Login/index.php');
+header('Location: login.php');

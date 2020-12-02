@@ -5,15 +5,12 @@ $pass = $_POST['password'];
 $time = time();
 $check = isset($_POST['remember-me']) ? $_POST['remember-me'] : '';
 
-$sql = "SELECT * FROM `login` WHERE username = '$username'";
+$sql = "SELECT * FROM `login` WHERE nim = '$username'";
 $query = mysqli_query($koneksi, $sql);
 $login = mysqli_fetch_object($query);
 
-var_dump($pass, $login->$pass);
-die();
-
 if ($login != NULL) {
-    if ($username == $login->username && $pass == $login->password) {
+    if ($username == $login->nim && $pass == $login->password) {
         $_SESSION['logged'] = 1;
         $_SESSION['username'] = $username;
 

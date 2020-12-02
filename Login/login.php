@@ -23,17 +23,17 @@
     if (isset($_COOKIE['cookielogin'])) {
         $username = $_COOKIE['cookielogin']['user'];
         $password = $_COOKIE['cookielogin']['pass'];
-        $sql = "SELECT * FROM `login` WHERE username = '$username'";
+        $sql = "SELECT * FROM `login` WHERE nim = '$username'";
         $query = mysqli_query($koneksi, $sql);
         $login = mysqli_fetch_object($query);
 
 
-        if ($username == $login->username && $password == $login->password) {
+        if ($username == $login->nim && $password == $login->password) {
             $_SESSION['logged'] = 1;
-            $_SESSION['username'] = $login->username;
-            header('Location: index.php');
+            $_SESSION['username'] = $login->nim;
+            header('Location: ../index.php');
         } else {
-            header('Location: index.php');
+            header('Location: ../index.php');
         }
     } elseif (isset($_SESSION['logged'])) {
         header('Location: index.php');
