@@ -1,7 +1,7 @@
 <?php include "tema/head.php" ?>
 <?php include "config.php" ?>
 <?php session_start();
-var_dump($_SERVER);
+var_dump($_SERVER['SERVER_NAME']);
 //jika tombol disimpan diklik
 if (isset($_POST['bsimpan'])) {
     //pengujian apakah data akan diedit atau disimpan baru
