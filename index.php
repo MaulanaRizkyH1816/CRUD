@@ -137,7 +137,7 @@ if (isset($_GET['hal'])) {
                 <button type="reset" class="btn btn-danger" name="briset">Reset</button>
                 <?php if (isset($_SESSION['logged'])) : ?>
                     <a class="btn btn-primary"><?= $_SESSION['username']; ?></a>
-                    <?= var_dump($_SERVER) ?>
+                    <?php var_dump($_SERVER) ?>
                     <a class="btn btn-success" href="/login/logout.php">Logout</a>
                 <?php else : ?>
                     <a class="btn btn-primary" href="/login/login.php">Login</a>
