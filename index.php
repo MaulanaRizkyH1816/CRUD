@@ -124,8 +124,8 @@ if (isset($_GET['hal'])) {
                     <label>Jenis Kelamin</label>
                     <select name="tjenis_kelamin" class="form-control">
                         <option value="<?= @$vjenis_kelamin ?>"><?= @$vjenis_kelamin ?></option>
-                        <option value="Perempuan">P</option>
-                        <option value="Lakl - laki">L</option>
+                        <option value="P">P</option>
+                        <option value="L">L</option>
                     </select>
                 </div>
 
